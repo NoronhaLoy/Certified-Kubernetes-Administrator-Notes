@@ -1141,8 +1141,9 @@ Passing dynamic values to running applications/containers at runtime
             password: sd89sdfh/sd9f==         # <-- base64 encoded text
         immutable: false                      # <-- Default value is false
        ```
-- Can load a secret from a file with imperative command
+- Can load a secret from a file with imperative command: There are 2 ways of creating a secret
     - `kubectl create secret generic my-secret --from-file <LOCAL FILENAME>`
+    - `kubectl create secret generic app-secret --from-file=app_secret.properties`
 
 
 
